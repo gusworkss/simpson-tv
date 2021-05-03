@@ -1,0 +1,86 @@
+:root {
+    --morado-fuerte: #39419F ;
+    --morado-claro: #7070A8;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 223, 68);
+}
+
+.caja-tv {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    padding-left: 30px;
+    background-color: var(--morado-claro);
+    border-radius: 20px;
+}
+
+.cuadro-interno {
+    display: flex;
+    width: 600px;
+    height: 530px;
+    background-color: var(--morado-fuerte);
+    margin-right: 20px;
+    align-self: center;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonera {
+    display: flex;
+    flex-direction: column;
+    width: 128px;
+    height: 530px;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    padding: 40px 0;
+}
+
+.volumen, .canal, .bocina  {
+    border: solid black 3px;
+}
+
+.cuadro-interno, video, .caja-tv{
+    border: solid 4px black;
+}
+
+.volumen, .canal{
+    width: 80px;
+    height: 80px;
+    background-color: var(--morado-fuerte);
+    border-radius: 50%;
+}
+.bocina {
+    width: 80px;
+    height: 220px;
+    background-color: var(--morado-fuerte);
+    border-radius: 15px;
+}
+
+video {
+    width: 88%;
+    height: 460px;
+    border-radius: 70px;
+    background-color: black;
+}
+
+
